@@ -3,6 +3,11 @@
 <html>
 
 <head>
+    <style>
+        body {
+            background-image: url('spaceyy photo.jpeg');
+        };
+    </style>
     <title>My Dyslexic Starsig Calulator</title>
     <script src="starsign.js"></script>
     <link href="style.css" rel="stylesheet">
@@ -13,6 +18,7 @@
     <h1>Find Your Star Sign</h1>
     <br>
     <p>Please select your birth month...</p>
+    <div class="center">
     <select id="birthMonth">
         <option value="1">January</option>
         <option value="2">February</option>
@@ -30,7 +36,9 @@
     
     <br>
     <p>...and now your birth day</p>
+    <div class="center">
     <select id="birthDay">
+        <div class="center"></div>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -65,16 +73,16 @@
     </select>
     <br>
     <p>Finally...</p>
-    <input
-        type="button"
-        value="click here!"
-        onclick="calculateStarSign()"
-        />
-    
-    <div>
-        Your star sign is:
-        <span id="starsign" />
-    </div>
+    <br>
+    <p id="center"><input 
+    type="button";
+    value="click here!";
+    onclick="calculateStarSign()";
+    /></p>
+    <br>
+        <p>Your star sign is:
+        <span id="starsign" >
+    <br>
 </body>
 
 </html>
