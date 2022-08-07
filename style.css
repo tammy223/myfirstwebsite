@@ -1,0 +1,30 @@
+h1 {
+    color: purple;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    height: 100px;
+    opacity: 70%;
+    text-align:center;
+}
+
+p {
+    color: rgb(99, 4, 99);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    text-align:center;
+}
+
+div {
+    color:purple;
+    height: 50px;
+    font-size: 30px;
+    text-align:center;
+}
+
+select{
+    height: 30px;
+    width: 400px;
+    color: rgba(15, 15, 171, 0.862);
+    text-align: center;
+}
+

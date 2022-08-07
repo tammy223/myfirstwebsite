@@ -5,9 +5,14 @@
 <head>
     <title>My Dyslexic Starsig Calulator</title>
     <script src="starsign.js"></script>
+    <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <h1>Find Your Star Sign</h1>
+    <br>
+    <p>Please select your birth month...</p>
     <select id="birthMonth">
         <option value="1">January</option>
         <option value="2">February</option>
@@ -23,6 +28,8 @@
         <option value="12">December</option>
     </select>
     
+    <br>
+    <p>...and now your birth day</p>
     <select id="birthDay">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -56,10 +63,11 @@
         <option value="30">30</option>
         <option value="31">31</option>
     </select>
-
+    <br>
+    <p>Finally...</p>
     <input
         type="button"
-        value="click me"
+        value="click here!"
         onclick="calculateStarSign()"
         />
     
