@@ -14,17 +14,25 @@ p {
     text-align:center;
 }
 
-div {
-    color:purple;
-    height: 50px;
-    font-size: 30px;
-    text-align:center;
+center{
+    height: 30px;
+    width:auto;
+    color: rgba(15, 15, 171, 0.862);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 select{
+    color:rgba(17, 17, 138, 0.643);
+    width:auto;
     height: 30px;
-    width: 400px;
-    color: rgba(15, 15, 171, 0.862);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: auto;
 }
 
