@@ -53,5 +53,6 @@
   .contactdetails p {
       font-size: 20px;
       font-family: system-ui;
+      text-align: center;
 
   }
