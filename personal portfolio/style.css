@@ -47,10 +47,6 @@
   .contactdetails h1 {
       font-family: system-ui;
       text-align: center;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      left: 40%;
   }
 
   .contactdetails p {
