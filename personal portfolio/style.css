@@ -48,6 +48,7 @@
       margin-top: 30px;
       display: flex;
       font-family: system-ui;
+      text-align: center;
   }
 
   .contactdetails p {
