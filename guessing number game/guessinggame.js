@@ -1,16 +1,14 @@
 //generates a random numbeer between 1 and 100
 randomNumber = Math.floor(Math.random() * 101);
 
-var guessedNumInt = (numbers);
-
 var numOfGuesses = 0;
 
 document.getElementById('submitGuess').onclick = function(){
 
-var guessedNumInt = document.getElementById('guess').value;
-if (guessedNumInt=== randomNumber){
+var guessedNum = document.getElementById('guess').value;
+if (guessedNum=== randomNumber){
     console.log(`You guessed correctly in ${numOfGuesses} guesses!`);
-} else if (guessedNumInt < randomNumber) {
+} else if (guessedNum < randomNumber) {
     numOfGuesses++;
     console.log('Higher!');
 } else {
