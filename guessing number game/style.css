@@ -1,0 +1,10 @@
+html {
+    font-family:sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0 auto;
+}
