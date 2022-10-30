@@ -7,9 +7,12 @@ var guessedNumInt = parseInt(guessedNum);
 if (guessedNumInt=== randomNumber){
     console.log(`You guessed correctly in ${numOfGuesses} guesses!`);
 } else if (guessedNumInt < randomNumber) {
+    numOfGuesses++;
     console.log('Higher!');
 } else {
+    numOfGuesses++
     console.log('Lower!');
 }
 
-
+var guesses = 0;
+var numOfGuesses = document.getElementById('guess').value;
