@@ -8,15 +8,39 @@
     <link href="style.css" rel="stylesheet">
 
 </head>
-<body>
+<body onload="resetGame()">
     <h1>Guess the number</h1>
-    <p> Beep boop! I have selected a number for you between 1 and 100, lets see if you can guess it! Beep boop.</p>
+    <p> Beep boop! I have selected a number for you between 1 and <span id='max_number'>?</span>, lets see if you can guess it! Beep boop.</p>
 
-    <div class="form">
+    <p>
+        Difficulty: 
+        <input type="button" value="Go EASY on me!" onclick="maxNumber = 10; resetGame();">
+        <input type="button" value="I like things MEDIUM" onclick="maxNumber = 100; resetGame()">
+        <input type="button" value="Give it me HARD" onclick="maxNumber = 1000; resetGame()">
+    </p>
+    
+    <form action="#" onsubmit="submitGuess()">
         <label for="guess">Choose a guess: </label>
-        <input type = "text" id = "guess" class = "guess">
-        <input type = "submit" value = "Submit Guess" class = "guessSubmit" id = "submitGuess">
-    </div>
+        <input type="text" id="guess" class="guess">
+        <input type="submit" value="Submit Guess" class="guessSubmit">
+        <input type="button" value="Reset Game" onclick="resetGame()">
+    </form>
+    
+    <p id="guesses">Guesses: <span id="guess_count">0</span></p>
+
+    
+
+    <p id="answer_higher" class="hidden">Too low, please choose a higher number.</p>
+    <p id="answer_lower" class="hidden">Too high, please choose a lower number.</p>
+    <p id="answer_invalid" class="hidden">Were the instructions too complex for you? Ask a nearby child for help.</p>
+    <p id="answer_correct" class="hidden"></p>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
 </body>
 </html>
